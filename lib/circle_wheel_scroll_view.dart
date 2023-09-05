@@ -393,6 +393,10 @@ class _FixedExtentScrollPosition extends ScrollPositionWithSingleContext
   double get itemExtent => _getItemExtentFromScrollContext(context);
 
   @override
+  double get devicePixelRatio => 1.0; // Or a relevant value
+
+
+  @override
   int get itemIndex {
     return _getItemFromOffset(
       offset: pixels,
